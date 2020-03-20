@@ -7,9 +7,11 @@ class SimpleLinkedList:
         if ptr is None:
             print("Linked List is Empty")
             return
-        while ptr is not None:
-            print(ptr.data, end = ' ')
-            ptr = ptr.next
+        else:
+            print("Start", end = '')
+            while ptr is not None:
+                print(" -> {}".format(ptr.data), end = '')
+                ptr = ptr.next
         print()
 
     def insert_node_at_ll_start(self, node):
@@ -24,9 +26,43 @@ class SimpleLinkedList:
             self.start = node
         else:
             ptr = self.start
+
             while ptr.next != None:
                 ptr = ptr.next
+
             ptr.next = node
+
+    def insert_node_before_value(self, node, pre):
+        if self.start == None:
+            print("List is empty, so inserting element at the start of list...")
+            self.start = node
+        elif self.start.data == pre:
+            self.insert_node_at_ll_start(node)
+        else:
+            preptr = None
+            ptr = self.start
+
+            while ptr.data != pre:
+                preptr = ptr
+                ptr = ptr.next
+
+            preptr.next = node
+            node.next = ptr
+
+    def insert_node_after_value(self, node, post):
+        if self.start == None:
+            print("List is empty, so inserting element at the start of list...")
+            self.start = node
+        else:
+            ptr = self.start
+            postptr = ptr.next
+
+            while ptr.data != post:
+                ptr = postptr
+                postptr = postptr.next
+                
+            ptr.next = node
+            node.next = postptr
 
     def delete_node_at_ll_start(self):
         if self.start == None:
@@ -43,9 +79,11 @@ class SimpleLinkedList:
         else:
             preptr = None
             ptr = self.start
+
             while ptr.next != None:
                 preptr = ptr
                 ptr = ptr.next
+            
             val = ptr.data
             preptr.next = None
             return val
