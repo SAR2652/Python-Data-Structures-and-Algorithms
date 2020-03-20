@@ -150,3 +150,12 @@ class SimpleLinkedList:
             ptr.next = postptr.next
             postptr = None
             return val
+
+    def clear_linked_list(self):
+        if self.start == None:
+            print("List is already empty!")
+        else:
+            ptr = self.start
+            while ptr != None:
+                self.delete_node_at_ll_start()
+                ptr = self.start

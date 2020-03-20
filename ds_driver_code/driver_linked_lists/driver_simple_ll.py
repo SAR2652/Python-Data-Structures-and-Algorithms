@@ -14,7 +14,8 @@ print("6. Delete Node at the start of Linked List")
 print("7. Delete Node at the end of Linked List")
 print("8. Delete Node before a node with given value in the Linked List")
 print("9. Delete Node after a node with given value in the Linked List")
-print("10. Exit")
+print("10. Delete all elements from the list")
+print("11. Exit")
 
 while True:
 
@@ -76,6 +77,10 @@ while True:
             print("Node with value {} succeeding the node with value {} was deleted from the end of list".format(val, post))
     
     elif choice == 10:
+        sll.clear_linked_list()
+        print("Deleted all elements from Linked List successfully...")
+
+    elif choice == 11:
         break
 
     else:
