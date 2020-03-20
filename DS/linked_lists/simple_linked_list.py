@@ -36,33 +36,46 @@ class SimpleLinkedList:
         if self.start == None:
             print("List is empty, so inserting element at the start of list...")
             self.start = node
+            return 1
         elif self.start.data == pre:
             self.insert_node_at_ll_start(node)
+            return 1
         else:
             preptr = None
             ptr = self.start
 
-            while ptr.data != pre:
+            while ptr != None and ptr.data != pre:
                 preptr = ptr
                 ptr = ptr.next
 
+            if ptr == None:
+                print("Value {} does not exist within list.".format(pre))
+                return 0
+
             preptr.next = node
             node.next = ptr
+            return 1
 
     def insert_node_after_value(self, node, post):
         if self.start == None:
             print("List is empty, so inserting element at the start of list...")
             self.start = node
+            return 0
         else:
             ptr = self.start
             postptr = ptr.next
 
-            while ptr.data != post:
+            while ptr != None and ptr.data != post:
                 ptr = postptr
                 postptr = postptr.next
-                
+
+            if ptr == None:
+                print("Value {} does not exist within list.".format(post))
+                return 0
+
             ptr.next = node
             node.next = postptr
+            return 1
 
     def delete_node_at_ll_start(self):
         if self.start == None:
@@ -86,4 +99,54 @@ class SimpleLinkedList:
             
             val = ptr.data
             preptr.next = None
+            return val
+
+    def delete_node_before_value(self, pre):
+        flag = None
+        if self.start == None:
+            print("List is empty, so try another time...")
+            return flag
+        elif self.start.data == pre:
+            print("No element before starting element {}".format(pre))
+            return flag
+        else:
+            preptr = None
+            ptr = self.start
+
+            while ptr.next.data != pre and ptr != None:
+                preptr = ptr
+                ptr = ptr.next
+            
+            if ptr != None:
+                val = ptr.data
+                preptr.next = ptr.next
+                ptr = None
+                return val
+            else:
+                return flag
+
+    def delete_node_after_value(self, post):
+        flag = None
+        if self.start == None:
+            print("List is empty, so try another time...")
+            return flag
+        else:
+            ptr = self.start
+            postptr = ptr.next
+
+            while postptr != None and ptr.data != post:
+                ptr = postptr
+                postptr = postptr.next
+
+            if ptr.data == post and ptr.next == None:
+                print("No value present in list after element {}".format(post))
+                return None
+
+            if ptr == None:
+                print("No value {} present within the list".format(post))
+                return None
+
+            val = postptr.data
+            ptr.next = postptr.next
+            postptr = None
             return val
