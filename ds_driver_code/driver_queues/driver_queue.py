@@ -1,4 +1,4 @@
-from DS.queue import Queue
+from DS.queues. import Queue
 
 print("Queue Operations :")
 print("1. ENQUEUE operation")

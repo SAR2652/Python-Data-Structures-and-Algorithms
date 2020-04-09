@@ -1,4 +1,4 @@
-from DS.stack import Stack
+from DS.stacks.stack import Stack
 
 print("Stack Operations :")
 print("1. PUSH operation")
@@ -8,7 +8,8 @@ print("4. Display all the elements currently in the stack")
 print("5. Exit")
 
 while True:
-    choice = input("Would you like to enter a maximum capacity for stack (yes / no) : ")
+    choice = input(
+        "Would you like to enter a maximum capacity for stack (yes / no) : ")
     if choice.lower() == "yes":
         m = int(input("Enter maximum capacity for stack : "))
         s = Stack(m)

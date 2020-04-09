@@ -1,0 +1,69 @@
+Date : 2020-04-09 20:52:38
+Directory : /home/sarvesh/DSA
+Total : 28 files,  556 codes, 3 comments, 149 blanks, all 708 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Python   |         28 |        556 |          3 |        149 |        708 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                 | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                    |         28 |        556 |          3 |        149 |        708 |
+| Algorithms                                                                           |          3 |         21 |          0 |          4 |         25 |
+| Algorithms/search_algorithms                                                         |          1 |          6 |          0 |          1 |          7 |
+| Algorithms/sorting_algorithms                                                        |          2 |         15 |          0 |          3 |         18 |
+| DS                                                                                   |          8 |        344 |          3 |         90 |        437 |
+| DS/linked_lists                                                                      |          3 |        283 |          0 |         77 |        360 |
+| DS/queues                                                                            |          2 |         28 |          1 |          6 |         35 |
+| DS/stacks                                                                            |          2 |         33 |          2 |          6 |         41 |
+| algo_driver_code                                                                     |          3 |         16 |          0 |          9 |         25 |
+| algo_driver_code/search_algo_driver_code                                             |          1 |          8 |          0 |          3 |         11 |
+| algo_driver_code/sorting_algo_driver_code                                            |          2 |          8 |          0 |          6 |         14 |
+| ds_apps                                                                              |          3 |         28 |          0 |         13 |         41 |
+| ds_apps/stack_apps                                                                   |          3 |         28 |          0 |         13 |         41 |
+| ds_driver_code                                                                       |         10 |        147 |          0 |         32 |        179 |
+| ds_driver_code/driver_linked_lists                                                   |          3 |         71 |          0 |         19 |         90 |
+| ds_driver_code/driver_queues                                                         |          2 |         36 |          0 |          5 |         41 |
+| ds_driver_code/driver_stack_apps                                                     |          2 |          4 |          0 |          2 |          6 |
+| ds_driver_code/driver_stacks                                                         |          2 |         36 |          0 |          5 |         41 |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                             | language | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/sarvesh/DSA/Algorithms/search_algorithms/linear_search.py                      | Python   |          6 |          0 |          1 |          7 |
+| /home/sarvesh/DSA/Algorithms/sorting_algorithms/bubble_sort.py                       | Python   |          6 |          0 |          2 |          8 |
+| /home/sarvesh/DSA/Algorithms/sorting_algorithms/insertion_sort.py                    | Python   |          9 |          0 |          1 |         10 |
+| /home/sarvesh/DSA/DS/__init__.py                                                     | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/DS/linked_lists/__init__.py                                        | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/DS/linked_lists/linked_list.py                                     | Python   |        274 |          0 |         74 |        348 |
+| /home/sarvesh/DSA/DS/linked_lists/linked_list_nodes.py                               | Python   |          9 |          0 |          2 |         11 |
+| /home/sarvesh/DSA/DS/queues/__init__.py                                              | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/DS/queues/queue.py                                                 | Python   |         28 |          1 |          5 |         34 |
+| /home/sarvesh/DSA/DS/stacks/__init__.py                                              | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/DS/stacks/stack.py                                                 | Python   |         33 |          2 |          5 |         40 |
+| /home/sarvesh/DSA/__init__.py                                                        | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/algo_driver_code/search_algo_driver_code/driver_linear_search.py   | Python   |          8 |          0 |          3 |         11 |
+| /home/sarvesh/DSA/algo_driver_code/sorting_algo_driver_code/driver_bubble_sort.py    | Python   |          4 |          0 |          3 |          7 |
+| /home/sarvesh/DSA/algo_driver_code/sorting_algo_driver_code/driver_insertion_sort.py | Python   |          4 |          0 |          3 |          7 |
+| /home/sarvesh/DSA/ds_apps/stack_apps/__init__.py                                     | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/ds_apps/stack_apps/parentheses_check.py                            | Python   |         20 |          0 |          7 |         27 |
+| /home/sarvesh/DSA/ds_apps/stack_apps/reverse_list.py                                 | Python   |          8 |          0 |          5 |         13 |
+| /home/sarvesh/DSA/ds_driver_code/__init__.py                                         | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/ds_driver_code/driver_linked_lists/__init__.py                     | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/ds_driver_code/driver_linked_lists/driver_circular_ll.py           | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/ds_driver_code/driver_linked_lists/driver_simple_ll.py             | Python   |         71 |          0 |         17 |         88 |
+| /home/sarvesh/DSA/ds_driver_code/driver_queues/__init__.py                           | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/ds_driver_code/driver_queues/driver_queue.py                       | Python   |         36 |          0 |          4 |         40 |
+| /home/sarvesh/DSA/ds_driver_code/driver_stack_apps/__init__.py                       | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/ds_driver_code/driver_stack_apps/driver_parentheses_check.py       | Python   |          4 |          0 |          1 |          5 |
+| /home/sarvesh/DSA/ds_driver_code/driver_stacks/__init__.py                           | Python   |          0 |          0 |          1 |          1 |
+| /home/sarvesh/DSA/ds_driver_code/driver_stacks/driver_stack.py                       | Python   |         36 |          0 |          4 |         40 |
+| Total                                                                                |          |        556 |          3 |        149 |        708 |
++--------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

@@ -1,5 +1,5 @@
-from DS.linked_lists.simple_linked_list import SimpleLinkedList
-from DS.linked_lists.linked_list_nodes.simple_ll_node import Node
+from DS.linked_lists.linked_list import SimpleLinkedList
+from DS.linked_lists.linked_list_nodes import Node
 
 sll = SimpleLinkedList()
 print("An empty Linked List has been initialized.")
