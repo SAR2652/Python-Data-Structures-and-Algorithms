@@ -171,6 +171,8 @@ class SimpleLinkedList:
                 ptr = self.start
 
 
+
+
 class CircularLinkedList:
     def __init__(self):
           self.start = None
@@ -185,7 +187,7 @@ class CircularLinkedList:
             while ptr.next != self.start:
                 print(" -> {}".format(ptr.data), end='')
                 ptr = ptr.next
-        print("Start")
+        print(" -> {} -> Start".format(ptr.data))
 
 
     def insert_node_at_cll_start(self, node):
@@ -208,7 +210,6 @@ class CircularLinkedList:
 
             ptr.next = node
             node.next = self.start
-
 
     def insert_node_before_value(self, node, pre):
         if self.start == None:
@@ -262,11 +263,13 @@ class CircularLinkedList:
             return None
         else:
             val = self.start.data
-            ptr = self.start.next
-            self.start = None
-            self.start = ptr
+            ptr = self.start
+            nextptr = self.start.next
+            while ptr.next != self.start:
+                ptr = ptr.next
+            self.start = nextptr
+            ptr.next = nextptr
             return val
-
 
     def delete_node_at_cll_end(self):
         if self.start == None:
@@ -275,12 +278,13 @@ class CircularLinkedList:
             preptr = None
             ptr = self.start
 
-            while ptr.next != None:
+            while ptr.next != self.start:
                 preptr = ptr
                 ptr = ptr.next
 
             val = ptr.data
-            preptr.next = None
+            ptr = None
+            preptr.next = self.start
             return val
 
 
@@ -293,14 +297,17 @@ class CircularLinkedList:
             print("No element before starting element {}".format(pre))
             return flag
         else:
-            preptr = None
-            ptr = self.start
+            preptr = self.start
+            ptr = self.start.next
 
-            while ptr.next.data != pre and ptr != None:
+            while ptr.data != pre and ptr.next.data != pre and ptr != self.start:
                 preptr = ptr
                 ptr = ptr.next
 
-            if ptr != None:
+            if ptr.data == pre:
+                return self.delete_node_at_cll_start()
+
+            if ptr != self.start:
                 val = ptr.data
                 preptr.next = ptr.next
                 ptr = None
@@ -314,15 +321,19 @@ class CircularLinkedList:
         if self.start == None:
             print("List is empty, so try another time...")
             return flag
+        elif self.start.data == post:
+            val = self.start.next.data
+            self.start.next = self.start.next.next
+            return val
         else:
             ptr = self.start
             postptr = ptr.next
 
-            while postptr != self.start and ptr.data != post:
+            while ptr.data != post and postptr != self.start:
                 ptr = postptr
                 postptr = postptr.next
 
-            if ptr.data == post and ptr.next == self.start:
+            if postptr.data == post and ptr.next == self.start:
                 print("No value present in list after element {}".format(post))
                 return None
 
@@ -335,13 +346,14 @@ class CircularLinkedList:
             postptr = None
             return val
 
-
     def clear_circular_linked_list(self):
         if self.start == None:
             print("List is already empty!")
         else:
             ptr = self.start
-            while ptr != None:
+            while ptr.next != self.start:
                 self.delete_node_at_cll_start()
-                ptr = self.start
+                ptr = ptr.next
+            ptr = None
+            self.start = None
 

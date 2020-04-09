@@ -1,55 +1,62 @@
 Python: Data Structures and Algorithms :
 A modular project to demonstrate the implementation of various Algorithms and Data Structures using Python.
 The folders containing the keyword **driver** contain the files to execute any particular algorithm or data structure.
-To execute a particular file :<br>
+To execute a particular file :
 ```python3 path/to/file.py```
 
-File Hierarchy Tree : 
-.
-├── algo_apps
-├── algo_driver_code
-│   ├── search_algo_driver_code
-│   │   └── driver_linear_search.py
-│   └── sorting_algo_driver_code
-│       ├── driver_bubble_sort.py
-│       └── driver_insertion_sort.py
-├── Algorithms
-│   ├── search_algorithms
-│   │   └── linear_search.py
-│   └── sorting_algorithms
-│       ├── bubble_sort.py
-│       └── insertion_sort.py
-├── DS
-│   ├── __init__.py
-│   ├── linked_lists
-│   │   ├── __init__.py
-│   │   ├── linked_list_nodes.py
-│   │   └── linked_list.py
-│   ├── queues
-│   │   ├── __init__.py
-│   │   └── queue.py
-│   └── stacks
-│       ├── __init__.py
-│       └── stack.py
-├── ds_apps
-│   └── stack_apps
-│       ├── __init__.py
-│       ├── parentheses_check.py
-│       └── reverse_list.py
-├── ds_driver_code
-│   ├── driver_linked_lists
-│   │   ├── driver_circular_ll.py
-│   │   ├── driver_simple_ll.py
-│   │   └── __init__.py
-│   ├── driver_queues
-│   │   ├── driver_queue.py
-│   │   └── __init__.py
-│   ├── driver_stack_apps
-│   │   ├── driver_parentheses_check.py
-│   │   └── __init__.py
-│   ├── driver_stacks
-│   │   ├── driver_stack.py
-│   │   └── __init__.py
-│   └── __init__.py
-├── __init__.py
-└── README.MD
+File Hierarchy Tree :<br>
+.<br>
+├── algo_apps<br>
+│   └── __init__.py<br>
+├── algo_driver_code<br>
+│   ├── __init__.py<br>
+│   ├── search_algo_driver_code<br>
+│   │   ├── driver_linear_search.py<br>
+│   │   └── __init__.py<br>
+│   └── sorting_algo_driver_code<br>
+│       ├── driver_bubble_sort.py<br>
+│       ├── driver_insertion_sort.py<br>
+│       └── __init__.py<br>
+├── Algorithms<br>
+│   ├── __init__.py<br>
+│   ├── search_algorithms<br>
+│   │   ├── __init__.py<br>
+│   │   └── linear_search.py<br>
+│   └── sorting_algorithms<br>
+│       ├── bubble_sort.py<br>
+│       ├── __init__.py<br>
+│       └── insertion_sort.py<br>
+├── DS<br>
+│   ├── __init__.py<br>
+│   ├── linked_lists<br>
+│   │   ├── __init__.py<br>
+│   │   ├── linked_list_nodes.py<br>
+│   │   └── linked_list.py<br>
+│   ├── queues<br>
+│   │   ├── __init__.py<br>
+│   │   └── queue.py<br>
+│   └── stacks<br>
+│       ├── __init__.py<br>
+│       └── stack.py<br>
+├── ds_apps<br>
+│   └── stack_apps<br>
+│       ├── __init__.py<br>
+│       ├── parentheses_check.py<br>
+│       └── reverse_list.py<br>
+├── ds_driver_code<br>
+│   ├── driver_linked_lists<br>
+│   │   ├── driver_circular_ll.py<br>
+│   │   ├── driver_simple_ll.py<br>
+│   │   └── __init__.py<br>
+│   ├── driver_queues<br>
+│   │   ├── driver_queue.py<br>
+│   │   └── __init__.py<br>
+│   ├── driver_stack_apps<br>
+│   │   ├── driver_parentheses_check.py<br>
+│   │   └── __init__.py<br>
+│   ├── driver_stacks<br>
+│   │   ├── driver_stack.py<br>
+│   │   └── __init__.py<br>
+│   └── __init__.py<br>
+├── __init__.py<br>
+└── README.MD<br>
