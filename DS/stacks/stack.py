@@ -1,7 +1,7 @@
 class Stack:
     stack_length = 0
     #pass an optional maximum stack size parameter MAX during declaration
-    def __init__(self, MAX = None):
+    def __init__(self, MAX=None):
         self.stack = []
         self.MAX = MAX
         self.top = -1

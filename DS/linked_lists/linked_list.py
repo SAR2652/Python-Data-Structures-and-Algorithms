@@ -171,8 +171,6 @@ class SimpleLinkedList:
                 ptr = self.start
 
 
-
-
 class CircularLinkedList:
     def __init__(self):
           self.start = None
@@ -357,3 +355,7 @@ class CircularLinkedList:
             ptr = None
             self.start = None
 
+
+class DoublyLinkedList:
+    def __init__(self):
+        self.start = None

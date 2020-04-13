@@ -84,7 +84,7 @@ while True:
 
     elif choice == 10:
         cll.clear_circular_linked_list()
-        print("Deleted all elements from Linked List successfully...")
+        print("Deleted all elements from Circular Linked List successfully...")
 
     elif choice == 11:
         break
