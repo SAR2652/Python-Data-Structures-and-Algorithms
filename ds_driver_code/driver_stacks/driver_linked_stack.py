@@ -1,4 +1,4 @@
-from DS.stacks.linked_stack import LinkedStack
+from DS.stacks.stack import LinkedStack
 from DS.linked_lists.linked_list_nodes import Node 
 
 print("Stack Operations :")
