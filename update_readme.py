@@ -22,8 +22,5 @@ for line in f.readlines():
     op.write(line + '<br>' + '\n')
 
 op.close()
-
+f.close()
 os.remove('sample.txt')
-
-
-

@@ -1,4 +1,4 @@
-from Algorithms.linear_search import LinearSearch
+from Algorithms.search_algorithms.linear_search import LinearSearch
 
 arr = [int(x) for x in input("Enter an array of integers : ").strip().split(' ')]
 n = int(input("Enter a number to search within the array : "))
