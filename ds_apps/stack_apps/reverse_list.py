@@ -1,4 +1,4 @@
-from DS.stack import Stack
+from DS.stacks.stack import Stack
 
 arr = [int(x) for x in input("Enter a list of numbers : ").strip().split(' ')]
 

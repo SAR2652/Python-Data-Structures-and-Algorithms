@@ -9,7 +9,7 @@ class SimpleLinkedList:
             return
         else:
             print("Start", end='')
-            while ptr is not None:
+            while ptr != None:
                 print(" -> {}".format(ptr.data), end='')
                 ptr = ptr.next
         print(" -> End")
@@ -359,3 +359,148 @@ class CircularLinkedList:
 class DoublyLinkedList:
     def __init__(self):
         self.start = None
+
+    def traverse_list(self):
+        if self.start == None:
+            print("Doubly Linked List is empty!!!")
+        else:
+            ptr = self.start
+            print("Start ->", end = ' ')
+            while ptr.next != None:
+                print("{} -> ".format(ptr.data), end = ' ')
+                ptr = ptr.next
+            print("{} -> End".format(ptr.data))
+
+    def insert_node_at_dll_start(self, node):
+        if self.start == None:
+            self.start = node
+        else:
+            node.next = self.start
+            self.start.prev = node
+            self.start = node
+        print("Element {} was successfully inserted into the doubly linked list.".format(node.data))
+
+    def insert_node_at_dll_end(self, node):
+        if self.start == None:
+            self.start = node
+        else:
+            ptr = self.start
+            while ptr.next != None:
+                ptr = ptr.next
+            ptr.next = node
+            node.prev = ptr
+        print("Element {} was successfully inserted into the doubly linked list.".format(node.data))
+
+    def insert_node_before_value(self, node, pre):
+        flag = None
+        if self.start.data == pre:
+            self.insert_node_at_dll_start(node)
+            flag = 1
+        else:
+            ptr = self.start
+            while ptr.next != None and ptr.data != pre:
+                ptr = ptr.next
+            if ptr != None:
+                preptr = ptr.prev
+                preptr.next = node
+                node.prev = preptr
+                node.next = ptr
+                ptr.prev = node
+                flag = 1
+                print("Element {} was successfully inserted before node with value {} into the doubly linked list.".format(node.data, pre))
+        return flag
+
+    def insert_node_after_value(self, node, post):
+        flag = None
+        if self.start == None:
+            print("Doubly Linked List is empty, so no value like {} exists in it.".format(post))
+            print("Inserting element with value {} at the beginning of the list".format(post))
+            self.start = node
+            flag = 1
+        else:    
+            ptr = self.start
+            while ptr.next != None and ptr.data != post:
+                ptr = ptr.next
+            if ptr != None:
+                postptr = ptr.next
+                ptr.next = node
+                node.prev = ptr
+                node.next = postptr
+                postptr.prev = node
+                flag = 1
+                print("Element {} was successfully inserted after the node with value {} into the doubly linked list.".format(node.data, post))
+        return flag
+
+    def delete_node_at_dll_start(self):
+        val = None
+        if self.start != None:
+            ptr = self.start
+            self.start = self.start.next
+            self.start.prev = None
+            val = ptr.data
+            return val
+        else:
+            return val
+        
+    def delete_node_at_dll_end(self):
+        val = None
+        if self.start != None:
+            ptr = self.start
+            while ptr.next != None:
+                ptr = ptr.next
+            val = ptr.data
+            ptr.prev.next = None
+            ptr = None
+            return val
+
+    def delete_node_before_value(self, pre):
+        val = None
+        if self.start == None:
+            print("Doubly Linked List is empty!!!")
+        else:
+            if self.start.data == pre:
+                print("Element {} is located at the beginning of the list so operation could not be performed".format(pre))
+                return -1
+            else:
+                ptr = self.start
+                while ptr.next.data != pre:
+                    ptr = ptr.next
+                if ptr != None:
+                    preptr = ptr.prev
+                    preptr.next = ptr.next
+                    if ptr.next != None:
+                        preptr.next.prev = preptr
+                    val = ptr.data
+                else:
+                    print("Node with value {} does not exist within the list.".format(pre))
+                    val = -2
+        return val
+
+    def delete_node_after_value(self, post):
+        val = None
+        if self.start == None:
+            print("Doubly Linked List is empty!!!")
+        else:
+            ptr = self.start
+            while ptr.next != None and ptr.data != post:
+                ptr = ptr.next
+            if ptr != None:
+                if ptr.next == None:
+                    print("Element {} is the last element in the linked list, so operation failure occured")
+                else:
+                    val = ptr.next.data
+                    postptr = ptr.next.next
+                    ptr.next = postptr
+                    postptr.prev = ptr
+            else:
+                print("Node with value {} does not exist within the list")
+                val = -2
+        return val
+
+    def clear_linked_list(self):
+        if self.start == None:
+            print("List is already empty!")
+        else:
+            while self.start.next != None:
+                self.delete_node_at_dll_start()
+            self.start = None

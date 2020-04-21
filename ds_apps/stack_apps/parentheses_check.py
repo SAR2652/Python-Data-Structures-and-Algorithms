@@ -1,4 +1,4 @@
-from DS.stack import Stack
+from DS.stacks.stack import Stack
 
 def parentheses_check(exp):
     s = Stack()
