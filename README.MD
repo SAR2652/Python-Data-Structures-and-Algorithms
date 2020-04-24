@@ -1,7 +1,7 @@
 # Python: Data Structures and Algorithms :
 A modular project to demonstrate the implementation of various Algorithms and Data Structures using Python.
 The folders containing the keyword **driver** contain the files to execute any particular algorithm or data structure.<br>
-To execute a particular file :
+To execute a particular file : <br>
 ```python3 path/to/file.py```
 
 File Hierarchy Tree :<br>
@@ -16,6 +16,8 @@ File Hierarchy Tree :<br>
 │   ├── __init__.py
 <br>
 │   ├── search_algo_driver_code
+<br>
+│   │   ├── driver_binary_search.py
 <br>
 │   │   ├── driver_linear_search.py
 <br>
@@ -34,6 +36,8 @@ File Hierarchy Tree :<br>
 │   ├── __init__.py
 <br>
 │   ├── search_algorithms
+<br>
+│   │   ├── binary_search.py
 <br>
 │   │   ├── __init__.py
 <br>
@@ -59,17 +63,9 @@ File Hierarchy Tree :<br>
 <br>
 │   │   └── linked_list.py
 <br>
-│   ├── queues
+│   ├── queue.py
 <br>
-│   │   ├── __init__.py
-<br>
-│   │   └── queue.py
-<br>
-│   └── stacks
-<br>
-│       ├── __init__.py
-<br>
-│       └── stack.py
+│   └── stack.py
 <br>
 ├── ds_apps
 <br>
@@ -141,11 +137,7 @@ File Hierarchy Tree :<br>
 <br>
 │   └── __init__.py
 <br>
-├── sample.txt
-<br>
 └── update_readme.py
 <br>
-
-<br>
-20 directories, 49 files
+18 directories, 49 files
 <br>
