@@ -1,7 +1,6 @@
-from DS.linked_lists.linked_list_nodes import Node
 class Stack:
     stack_length = 0
-    #pass an optional maximum stack size parameter MAX during declaration
+    # pass an optional maximum stack size parameter MAX during declaration
     def __init__(self, MAX=None):
         self.stack = []
         self.MAX = MAX
@@ -38,6 +37,7 @@ class Stack:
 
     def view(self):
         print("Elements currently present in the stack are : {}".format(self.stack))
+        
 
 class LinkedStack:
     def __init__(self, MAX=None):
