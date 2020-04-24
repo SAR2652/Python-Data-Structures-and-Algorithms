@@ -1,4 +1,4 @@
-from DS.stacks.stack import Stack
+from DS.stack import Stack
 
 print("Stack Operations :")
 print("1. PUSH operation")

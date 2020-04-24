@@ -1,4 +1,4 @@
-from DS.queues.queue import LinkedQueue
+from DS.queue import LinkedQueue
 from DS.linked_lists.linked_list_nodes import Node
 
 print("Queue Operations :")
