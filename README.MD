@@ -29,27 +29,17 @@ Directory Tree :<br>
 <br>
 │       ├── driver_insertion_sort.py
 <br>
+│       ├── driver_selection_sort.py
+<br>
 │       └── __init__.py
 <br>
 ├── Algorithms
 <br>
 │   ├── __init__.py
 <br>
-│   ├── search_algorithms
+│   ├── search_algorithms.py
 <br>
-│   │   ├── binary_search.py
-<br>
-│   │   ├── __init__.py
-<br>
-│   │   └── linear_search.py
-<br>
-│   └── sorting_algorithms
-<br>
-│       ├── bubble_sort.py
-<br>
-│       ├── __init__.py
-<br>
-│       └── insertion_sort.py
+│   └── sorting_algorithms.py
 <br>
 ├── DS
 <br>
@@ -137,7 +127,11 @@ Directory Tree :<br>
 <br>
 │   └── __init__.py
 <br>
+├── sample.txt
+<br>
 └── update_readme.py
 <br>
-18 directories, 49 files
+
+<br>
+16 directories, 46 files
 <br>
