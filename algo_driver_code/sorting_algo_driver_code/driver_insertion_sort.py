@@ -1,4 +1,4 @@
-from Algorithms.sorting_algorithms.insertion_sort import InsertionSort
+from Algorithms.sorting_algorithms import InsertionSort
 
 arr = [int(x) for x in input("Enter an array of integers : ").strip().split(' ')]
 arr = InsertionSort(arr)

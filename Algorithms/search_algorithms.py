@@ -1,3 +1,11 @@
+def LinearSearch(arr, x):
+    pos = None
+    for i in arr:
+        if i == x:
+            pos = arr.index(x)
+
+    return pos
+
 def BinarySearch(arr, beg, end, x):
     if end >= beg:
         mid = beg + (end - beg) // 2
@@ -9,4 +17,3 @@ def BinarySearch(arr, beg, end, x):
             BinarySearch(arr, mid + 1, end, x)
     else:
         return None
-        

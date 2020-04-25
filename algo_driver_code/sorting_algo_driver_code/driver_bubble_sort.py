@@ -1,4 +1,4 @@
-from Algorithms.sorting_algorithms.bubble_sort import BubbleSort
+from Algorithms.sorting_algorithms import BubbleSort
 
 arr = [int(x) for x in input("Enter an array of integers : ").strip().split(' ')]
 

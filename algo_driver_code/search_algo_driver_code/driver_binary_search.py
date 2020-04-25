@@ -1,4 +1,4 @@
-from Algorithms.search_algorithms.binary_search import BinarySearch
+from Algorithms.search_algorithms import BinarySearch
 
 arr = [int(x) for x in input("Enter the elements in the array : ").split(' ')]
 
