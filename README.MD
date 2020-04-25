@@ -4,7 +4,7 @@ The folders containing the keyword **driver** contain the files to execute any p
 To execute a particular file : <br>
 ```python3 path/to/file.py```
 
-File Hierarchy Tree :<br>
+Directory Tree :<br>
 .
 <br>
 ├── algo_apps
