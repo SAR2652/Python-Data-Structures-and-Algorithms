@@ -19,7 +19,8 @@ op = open('README.MD', 'w')
 f = open('sample.txt')
 op.write(intro)
 for line in f.readlines():
-    op.write(line + '<br>' + '\n')
+    if 'sample.txt' not in line:
+        op.write(line + '<br>' + '\n')
 
 op.close()
 f.close()

@@ -1,4 +1,4 @@
-# Python: Data Structures and Algorithms :
+# Python: Data Structures and Algorithms
 A modular project to demonstrate the implementation of various Algorithms and Data Structures using Python.
 The folders containing the keyword **driver** contain the files to execute any particular algorithm or data structure.<br>
 To execute a particular file : <br>
@@ -126,8 +126,6 @@ Directory Tree :<br>
 │   ├── driver_tower_of_hanoi.py
 <br>
 │   └── __init__.py
-<br>
-├── sample.txt
 <br>
 └── update_readme.py
 <br>

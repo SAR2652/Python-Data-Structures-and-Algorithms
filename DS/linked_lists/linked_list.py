@@ -170,6 +170,19 @@ class SimpleLinkedList:
                 self.delete_node_at_ll_start()
                 ptr = self.start
 
+    
+    def selection_sort(self):
+        if self.start == None:
+            print("Linked List is already empty")
+        else:
+            outerptr = self.start
+            minptr = outerptr
+            while outerptr.next != None:
+                innerptr = outerptr.next
+                while innerptr.next != null:
+                    if innerptr.data < minptr.data:
+                        minptr = innerptr
+                
 
 class CircularLinkedList:
     def __init__(self):
