@@ -171,17 +171,21 @@ class SimpleLinkedList:
                 ptr = self.start
 
     
-    def selection_sort(self):
+    def bubble_sort(self):
         if self.start == None:
             print("Linked List is already empty")
         else:
             outerptr = self.start
-            minptr = outerptr
             while outerptr.next != None:
                 innerptr = outerptr.next
-                while innerptr.next != null:
-                    if innerptr.data < minptr.data:
-                        minptr = innerptr
+                while innerptr != None:
+                    if innerptr.data < outerptr.data:
+                        temp = outerptr.data
+                        outerptr.data = innerptr.data
+                        innerptr.data = temp
+                    innerptr = innerptr.next
+                outerptr = outerptr.next
+
                 
 
 class CircularLinkedList:
