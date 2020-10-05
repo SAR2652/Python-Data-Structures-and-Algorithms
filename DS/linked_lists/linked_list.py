@@ -381,9 +381,9 @@ class CircularLinkedList:
             print("Linked List is already empty")
         else:
             outerptr = self.start
-            while outerptr.next != start:
+            while outerptr.next != self.start:
                 innerptr = outerptr.next
-                while innerptr != start:
+                while innerptr != self.start:
                     if innerptr.data < outerptr.data:
                         temp = outerptr.data
                         outerptr.data = innerptr.data
@@ -539,3 +539,18 @@ class DoublyLinkedList:
             while self.start.next != None:
                 self.delete_node_at_dll_start()
             self.start = None
+
+    def bubble_sort(self):
+        if self.start == None:
+            print("Linked List is already empty")
+        else:
+            outerptr = self.start
+            while outerptr.next != None:
+                innerptr = outerptr.next
+                while innerptr != None:
+                    if innerptr.data < outerptr.data:
+                        temp = outerptr.data
+                        outerptr.data = innerptr.data
+                        innerptr.data = temp
+                    innerptr = innerptr.next
+                outerptr = outerptr.next

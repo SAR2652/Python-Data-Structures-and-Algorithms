@@ -15,7 +15,8 @@ print("7. Delete Node at the end of Linked List")
 print("8. Delete Node before a node with given value in the Linked List")
 print("9. Delete Node after a node with given value in the Linked List")
 print("10. Delete all elements from the list")
-print("11. Exit")
+print("11. Bubble Sort")
+print("12. Exit")
 
 while True:
 
@@ -84,6 +85,10 @@ while True:
         print("Deleted all elements from Linked List successfully...")
 
     elif choice == 11:
+        dll.bubble_sort()
+        print("Sorted Linked List Successfully...")
+
+    elif choice == 12:
         break
 
     else:
