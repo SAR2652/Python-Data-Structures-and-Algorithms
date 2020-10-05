@@ -87,6 +87,10 @@ while True:
         print("Deleted all elements from Circular Linked List successfully...")
 
     elif choice == 11:
+        cll.bubble_sort()
+        print("Sorted Circular Linked List successfully...")
+
+    elif choice == 12:
         break
 
     else:
