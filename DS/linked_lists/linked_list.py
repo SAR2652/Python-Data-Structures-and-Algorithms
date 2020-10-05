@@ -381,9 +381,9 @@ class CircularLinkedList:
             print("Linked List is already empty")
         else:
             outerptr = self.start
-            while outerptr.next != start:
+            while outerptr.next != self.start:
                 innerptr = outerptr.next
-                while innerptr != start:
+                while innerptr != self.start:
                     if innerptr.data < outerptr.data:
                         temp = outerptr.data
                         outerptr.data = innerptr.data
