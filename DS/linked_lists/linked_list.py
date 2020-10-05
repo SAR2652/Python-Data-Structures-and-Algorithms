@@ -211,6 +211,10 @@ class CircularLinkedList:
             self.start.next = self.start
         else:
             node.next = self.start
+            ptr = self.start
+            while ptr.next != self.start:
+                ptr = ptr.next
+            ptr.next = node
             self.start = node
 
 
@@ -372,6 +376,20 @@ class CircularLinkedList:
             ptr = None
             self.start = None
 
+    def bubble_sort(self):
+        if self.start == None:
+            print("Linked List is already empty")
+        else:
+            outerptr = self.start
+            while outerptr.next != start:
+                innerptr = outerptr.next
+                while innerptr != start:
+                    if innerptr.data < outerptr.data:
+                        temp = outerptr.data
+                        outerptr.data = innerptr.data
+                        innerptr.data = temp
+                    innerptr = innerptr.next
+                outerptr = outerptr.next
 
 class DoublyLinkedList:
     def __init__(self):
